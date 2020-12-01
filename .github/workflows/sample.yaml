@@ -9,3 +9,4 @@ jobs:
       - run: echo "example job"
       - run: uname -a
       - run: env
+      - run: grep -m1 -o aes /proc/cpuinfo
