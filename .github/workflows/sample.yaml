@@ -8,5 +8,4 @@ jobs:
     steps:
       - run: echo "example job"
       - run: uname -a
-      - run: env
-      - run: grep -m1 -o aes /proc/cpuinfo
+      - run: python -c "import platform; print(platform.machine()); print(platform.processor()); print(platform.mac_ver())"
