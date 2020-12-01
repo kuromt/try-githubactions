@@ -1,0 +1,11 @@
+name: Trial job
+on: push
+
+jobs:
+  example_job:
+    name: hogehoge
+    runs-on: 
+    steps:
+      - run: echo "example job"
+      - run: uname -a
+      - run: env
