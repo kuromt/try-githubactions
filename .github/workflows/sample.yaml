@@ -10,3 +10,4 @@ jobs:
       - run: uname -a
       - run: python -c "import platform; print(platform.machine()); print(platform.processor()); print(platform.mac_ver())"
       - run: echo "this is steps after make repository private2"
+      - run: echo "Github actions allows private-repositry if in capacity of free plan"
